@@ -6,7 +6,7 @@ from django.http.response import HttpResponse
 
 
 def hey_you(request: HttpRequest, name: str) -> HttpResponse:
-    return HttpResponse(f"Hey, {name}!")
+    return HttpResponse(f"Hey, {name.upper()}!")
 
 
 def how_old(request: HttpRequest, end_year: int, birth_year: int) -> HttpResponse:
